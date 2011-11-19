@@ -1,0 +1,15 @@
+Source: chimera-apache-startup
+Section: misc
+Priority: optional
+Maintainer: Brandon Arp <brandon@arpnetworking.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.2
+Homepage: http://www.arpnetworking.com
+Vcs-Git: ssh://git@git.arpnetworking.com/chimera-apache-startup.git
+
+Package: chimera-apache-startup
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter, apache2
+Description: Apache2 statup scripts for chimera environments
+ Startup scripts for apache2 in a chimera environment
+

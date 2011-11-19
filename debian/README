@@ -1,0 +1,6 @@
+The Debian Package chimera-apache-startup
+----------------------------
+
+This set of scripts will allow apache to be run with minimal configuration in a chimera environment.  Note that you must provide the proper sites-enabled and sites-available configuration files and links.  This package only makes sure that apache gets started
+
+ -- Brandon Arp <brandon@arpnetworking.com>  Thu, 18 Nov 2011 22:05:42 -0800

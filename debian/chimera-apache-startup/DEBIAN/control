@@ -1,13 +1,12 @@
 Package: chimera-apache-startup
 Version: 1.0.0.0
-Section: deploy
-Priority: optional
 Architecture: all
-Essential: no
-Depends: ruby1.8, apache2
-Installed-Size: 1024
 Maintainer: Brandon Arp <brandon@arpnetworking.com>
+Installed-Size: 64
+Depends: ruby | ruby-interpreter, apache2
 Provides: chimera-apache-startup
+Section: misc
+Priority: optional
+Homepage: http://www.arpnetworking.com
 Description: Apache2 statup scripts for chimera environments
  Startup scripts for apache2 in a chimera environment
-
