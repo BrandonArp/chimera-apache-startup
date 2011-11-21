@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 root = ENV["ENV_ROOT"]
+root = "" if root == nil
 apache_config = root + "/etc/apache2/apache2.conf"
 server_root = root + "/etc/apache2"
 ENV["APACHE_CONFDIR"] = root + "/etc/apache2"

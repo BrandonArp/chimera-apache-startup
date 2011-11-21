@@ -1,3 +1,9 @@
+chimera-apache-startup (1.0.0.1) oneiric; urgency=low 
+
+  * Added symlinks to enable the default apache modules 
+
+ -- Brandon Arp <brandon@brandonlappy>  Mon, 21 Nov 2011 10:38:57 -0800
+
 chimera-apache-startup (1.0.0.0) oneiric; urgency=low
 
   * Initial Release.
