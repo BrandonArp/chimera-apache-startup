@@ -1,3 +1,9 @@
+chimera-apache-startup (1.0.0.4) oneiric; urgency=low
+
+  * removed broken serverroot command line arg 
+
+ -- Brandon Arp <brandon@arpnetworking.com>  Mon, 21 Nov 2011 17:32:32 -0800
+
 chimera-apache-startup (1.0.0.3) oneiric; urgency=low
 
   * fixed missing load file for authz_default

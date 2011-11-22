@@ -13,5 +13,5 @@ ENV["APACHE_LOCK_DIR"] = root + "/var/lock/apache2"
 ENV["APACHE_ENVVARS"] = "/dev/null"
 ENV["APACHE_RUN_USER"] = "www-data"
 ENV["APACHE_RUN_GROUP"] = "www-data"
-command = "apache2ctl restart -d #{server_root}"
+command = "apache2ctl restart"
 Kernel.system(command)
