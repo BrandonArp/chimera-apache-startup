@@ -1,3 +1,9 @@
+chimera-apache-startup (1.0.0.5) oneiric; urgency=low
+
+  * fix ssl.conf absolute path bug 
+
+ -- Brandon Arp <brandon@arpnetworking.com>  Mon, 21 Nov 2011 17:56:13 -0800
+
 chimera-apache-startup (1.0.0.4) oneiric; urgency=low
 
   * removed broken serverroot command line arg 
