@@ -5,7 +5,7 @@ chimera-apache-startup (1.0.0.2) oneiric; urgency=low
   * created chimera-specific .load files for all modules
   * added serverroot to the startup script
 
- -- brandon <brandon@dev-Virtualbox>  Mon, 21 Nov 2011 16:01:07 -0800
+ -- brandon <brandon@arpnetworking.com>  Mon, 21 Nov 2011 16:01:07 -0800
 
 chimera-apache-startup (1.0.0.1) oneiric; urgency=low 
 
