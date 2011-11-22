@@ -1,5 +1,5 @@
 FILES = etc usr
-MODAV = '../mods-available'
+MODAV = '../chimera-mods-available'
 MODEN = $(DESTDIR)/etc/apache2/mods-enabled
 
 build:
@@ -28,8 +28,11 @@ install:
 	ln -s '$(MODAV)/negotiation.load' $(MODEN)/negotiation.load
 	ln -s '$(MODAV)/reqtimeout.conf' $(MODEN)/reqtimeout.conf
 	ln -s '$(MODAV)/reqtimeout.load' $(MODEN)/reqtimeout.load
+	ln -s '$(MODAV)/rewrite.load' $(MODEN)/rewrite.load
 	ln -s '$(MODAV)/setenvif.conf' $(MODEN)/setenvif.conf
 	ln -s '$(MODAV)/setenvif.load' $(MODEN)/setenvif.load
+	ln -s '$(MODAV)/ssl.conf' $(MODEN)/ssl.conf
+	ln -s '$(MODAV)/ssl.load' $(MODEN)/ssl.load
 	ln -s '$(MODAV)/status.conf' $(MODEN)/status.conf
 	ln -s '$(MODAV)/status.load' $(MODEN)/status.load
 
