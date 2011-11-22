@@ -1,3 +1,9 @@
+chimera-apache-startup (1.0.0.6) oneiric; urgency=low
+
+  * create run and lock directories 
+
+ -- Brandon Arp <brandon@arpnetworking.com>  Mon, 21 Nov 2011 21:02:48 -0800
+
 chimera-apache-startup (1.0.0.5) oneiric; urgency=low
 
   * fix ssl.conf absolute path bug 
