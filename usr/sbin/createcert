@@ -1,0 +1,33 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+
+key_len = 2048
+cert_base = 'cert'
+config_file = 'server.cnf'
+
+parser = OptionParser.new
+
+parser.on("-h", "--help", "show this help dialog") do
+  puts parser
+  exit
+end
+
+parser.on("-b", "--base BASE", "base name/location for the key and crt file") do |base|
+  cert_base = base
+end
+
+parser.on("-k", "--keylen LEN", "key length, recommended 2048 or larger") do |len|
+  key_len = len
+end
+
+parser.on("-c", "--config FILE", "config file for creating the cert") do |conf|
+  config_file = conf
+end
+parser.parse!
+
+
+system("openssl genrsa -out #{cert_base}.key #{key_len}")
+system("openssl req -new -key #{cert_base}.key -config #{config_file} -out #{cert_base}.csr")
+system("openssl x509 -req -days 365 -in #{cert_base}.csr -signkey #{cert_base}.key -out #{cert_base}.crt")
+File.unlink("#{cert_base}.csr")
