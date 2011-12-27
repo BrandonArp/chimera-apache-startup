@@ -1,3 +1,9 @@
+chimera-apache-startup (1.0.0.7) oneiric; urgency=low
+
+  * added createcert script 
+
+ -- Brandon Arp <brandon@arpnetworking.com>  Mon, 26 Dec 2011 16:40:27 -0800
+
 chimera-apache-startup (1.0.0.6) oneiric; urgency=low
 
   * create run and lock directories 

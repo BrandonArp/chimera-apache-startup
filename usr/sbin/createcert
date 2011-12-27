@@ -27,6 +27,11 @@ end
 parser.parse!
 
 
+if not File.exist?(config_file)
+  puts "certificate creation configuration file does not exist, cannot continue"
+  exit 1
+end
+
 system("openssl genrsa -out #{cert_base}.key #{key_len}")
 system("openssl req -new -key #{cert_base}.key -config #{config_file} -out #{cert_base}.csr")
 system("openssl x509 -req -days 365 -in #{cert_base}.csr -signkey #{cert_base}.key -out #{cert_base}.crt")
