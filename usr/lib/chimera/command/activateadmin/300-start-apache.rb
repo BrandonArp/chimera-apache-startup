@@ -15,5 +15,7 @@ ENV["APACHE_LOCK_DIR"] = root + "/var/lock/apache2"
 ENV["APACHE_ENVVARS"] = "/dev/null"
 ENV["APACHE_RUN_USER"] = "www-data"
 ENV["APACHE_RUN_GROUP"] = "www-data"
+#set php search path
+ENV["PHP_INI_SCAN_DIR"] = root + "/etc/php5/apache2/conf.d"
 command = "apache2ctl restart"
 Kernel.system(command)
